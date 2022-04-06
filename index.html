@@ -2,6 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:url" content="https://animanman.github.io/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="あにまん検索【非公式】" />
@@ -27,6 +28,55 @@
         </a>
       </h1>
     </header>
+    <main>
+      <div class="naiyou">
+        <div class="search_word">
+          <label><strong>検索ワード</strong></label>
+          <input type="text" id="q" value="" placeholder="検索したい語句を入れるゲー">
+        </div>
+        <div class="search_option">
+          <div class="search_category">
+            <label><strong>カテゴリー</strong></label>
+            <select id="type" name="medtype">
+              <option value=""　placeholder="指定なし"></option>
+              <optgroup label="単発スレ">
+                <option value="category4">その他ジャンル</option>
+                <option value="category11">ジャンプ漫画(集英社系)</option>
+                <option value="category28">チャンピオン漫画(秋田書店系)</option>
+                <option value="category1">その他漫画</option>
+                <option value="category16">ワンピース</option>
+                <option value="category14">鬼滅の刃</option>
+                <option value="category15">呪術廻戦</option>
+                <option value="category19">ヒロアカ</option>
+                <option value="category26">NARUTO・BORUTO</option>
+                <option value="category18">進撃の巨人</option>
+                <option value="category17">ワールドトリガー</option>
+                <option value="category27">TOUGH(タフ)</option>
+                <option value="category2">アニメ</option>
+                <option value="category8">ウマ娘・競馬</option>
+                <option value="category9">型月(Fate・FGO・月姫など)</option>
+                <option value="category10">ポケモン</option>
+                <option value="category13">アイドルマスター</option>
+                <option value="category25">カードゲーム(TCG・DCG)</option>
+                <option value="category3">その他ゲーム・ソシャゲ</option>
+                <option value="category24">VTuber・2.5次元</option>
+                <option value="category22">特撮ヒーロー</option>
+                <option value="category12">小説(ラノベ・web小説など)</option>
+                <option value="category23">創作全般(絵・小説・ゲ制など)</option>
+              </optgroup>
+              <optgroup label="通常スレ">
+                <option value="category6">作品別</option>
+                <option value="category7">その他話題</option>
+              </optgroup>
+              <optgroup label="実況・安価など">
+                <option value="category21">実況</option>
+                <option value="category20">安価系</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+      </div>
+    </main>
     テストなう
   </body>
 </html>
