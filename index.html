@@ -21,7 +21,6 @@
     <header>
       <h1 id="logo">
         <a href="https://animanman.github.io/" class="site_top">
-          <div id="svg_size"></div>
           <svg id="logo_img" title="あにまん検索【非公式】">
             <use xlink:href="https://animanman.github.io/commons/rogo.svg#animanman"></use>
           </svg>
@@ -32,6 +31,7 @@
     </header>
     <main>
       <div class="naiyou">
+        <p>検索範囲をあにまん掲示板に絞って雑に検索します</p>
         <div class="search_word">
           <label><strong>検索ワード</strong></label>
           <input type="text" id="q" value="" placeholder="検索したい語句を入れるゲー">
@@ -77,6 +77,11 @@
             </select>
           </div>
         </div>
+        <button onclick="search">検索</button>
+      </div>
+      <div class="cyau_naiyou">
+        <p>あにまん掲示板内のスレッド検索結果(リンクのみ)</p>
+        <div>予定地
       </div>
     </main>
     テストなう
