@@ -30,6 +30,7 @@
   --fc6:#dc3545; /*赤*/
   --fc7:#0a58ca; /*リンク(hover)*/
   --fc8:#; /*リンク(visited)*/
+  --fc9:#fff;
 }
 
 body {
