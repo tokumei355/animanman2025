@@ -1,3 +1,9 @@
+*{
+  margin:0;
+  padding:0;
+  text-decoration:none;
+}
+
 :root{
   /*背景色*/
   --bg1:#104cd0; /*基本色、コテハン等*/
@@ -23,7 +29,7 @@
   --fc5:#0f5132; /*お知らせの色*/
   --fc6:#dc3545; /*赤*/
   --fc7:#0a58ca; /*リンク(hover)*/
-  --fc8:#0a58ca; /*リンク(visited)*/
+  --fc8:#; /*リンク(visited)*/
 }
 
 body {
