@@ -1,10 +1,13 @@
+/*★リセット*/
 *{
   margin:0;
   padding:0;
   text-decoration:none;
 }
 
+/*★基本設定*/
 :root{
+ /*あにまん掲示板の色のスポイト*/
   /*背景色*/
   --bg1:#104cd0; /*基本色、コテハン等*/
   --bg2:#eef8ff; /*リンク等の色*/
@@ -15,8 +18,7 @@
   --bg7:#def; /*リンク(visited)*/
   
   /*背景ライン色*/
-  /*--bgl1:#104cd0; 基本色
-  --bgl2:#aaa; リンク等の色*/
+  /*bgl1:#104cd0; 基本色 bgl2:#aaa; リンク等の色*/
   --bgl3:#b6effb; /*新規スレ作成注意書き等の色*/
   --bgl4:#f5c2c7; /*書き込み期限の色*/
   --bgl5:#badbcc; /*お知らせの色*/
@@ -31,6 +33,7 @@
   --fc7:#0a58ca; /*リンク(hover)*/
   --fc8:#; /*リンク(visited)*/
   --fc9:#fff;
+  --fc10:#000;
 }
 
 body {
@@ -42,7 +45,18 @@ body {
               sans-serif;
 }
 
+a{
+  color:var(--fc2);
+}
+a:hover{
+  color:var(--fc7);
+}
+a:visited{
+  color:var(--fc8);
+}
+
+/*★詳細設定*/
 h1#logo{
   background-color:var(--bg1);
-  color:var(--fc91);
+  color:var(--fc9);
 }
