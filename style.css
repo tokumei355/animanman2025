@@ -1,4 +1,38 @@
+:root{
+  /*背景色*/
+  --bg1:#104cd0; /*基本色、コテハン等*/
+  --bg2:#eef8ff; /*リンク等の色*/
+  --bg3:#cff4fc; /*新規スレ作成注意書き等の色*/
+  --bg4:#f8d7da; /*書き込み期限の色*/
+  --bg5:#d1e7dd; /*お知らせの色*/
+  
+  /*背景ライン色*/
+  /*--bgl1:#104cd0; 基本色
+  --bgl2:#aaa; リンク等の色*/
+  --bgl3:#b6effb; /*新規スレ作成注意書き等の色*/
+  --bgl4:#f5c2c7; /*書き込み期限の色*/
+  --bgl5:#badbcc; /*お知らせの色*/
+  
+  /*文字色*/
+  --fc1:#444; /*ナビゲーションバーなど*/
+  --fc2:#0d6efd; /*リンク等の色*/
+  --fc3:#055160; /*新規スレ作成注意書き等の色*/
+  --fc4:#842029; /*書き込み期限の色*/
+  --fc5:#0f5132; /*お知らせの色*/
+  --fc6:#dc3545; /*赤*/
+  --fc7:#0a58ca; /*リンク(hover)*/
+  --fc8:#0a58ca; /*リンク(hover)*/
+}
+
+body {
+  font-family:"Helvetica Neue",
+              Arial,
+              "Hiragino Kaku Gothic ProN",
+              "Hiragino Sans",
+              Meiryo,
+              sans-serif;
+}
 
 h1#logo{
-  background: #eef8ff;
+  background-color:var(--bg1);
 }
