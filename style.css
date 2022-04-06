@@ -61,6 +61,6 @@ h1#logo{
   background-color:var(--bg1);
   color:var(--fc9);
 }
-h1#logo svg#logo_img use svg#animanman{
+h1#logo svg#logo_img svg#animanman{
   fill:var(--fc9);
 }
