@@ -63,4 +63,5 @@ h1#logo{
 }
 h1#logo a.site_top svg#logo_img{
   fill:var(--fc9);
+  
 }
