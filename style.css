@@ -61,15 +61,8 @@ h1#logo{
   background-color:var(--bg1);
   color:var(--fc9);
 }
-h1#logo div#svg_size{
-  padding-bottom:100px;
-  position:relative;
-}
 
 h1#logo a.site_top svg#logo_img{
   fill:var(--fc9);
   height:100px;
-  position:absolute;
-  top:0;
-  left:0;
 }
