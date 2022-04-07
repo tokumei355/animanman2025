@@ -27,8 +27,23 @@ const category27 = "TOUGH(タフ)";
 const category28 = "チャンピオン漫画(秋田書店系)";
 const category29 = "";
 
-$('header > div.share div.btn').on({
-  'click': function() {
-    $(this).css({'color':'var(--amm2)','background-color':'var(--amm3)'});
-  }
+$(function() {
+
+	let href =location.href;
+	let getTitle = $('title').html();
+
+	let snsUrl = encodeURIComponent(href);
+	let snsTitle = encodeURIComponent(getTitle);
+
+	$('div.btn').on("click",function(){
+		$(this).css({'background-color':'var(--amm3)'});
+		$(this).children('i').css({'color':'var(--amm2)'});
+		let btn_a = $(this).attr('id');
+		let btn_b = btn_a;
+		switch (btn_b){
+    			case 'tws_btn':
+    			$(this).attr('href','http://twitter.com/share?text='+ snsTitle + '&url='+ snsUrl);
+    			break;
+  		}
+	});
 });
