@@ -100,11 +100,13 @@ body > header{
   grid-column:1/-1;
   display:grid;
   grid-template-columns: 1fr minmax(75%,auto) 1fr;
+  padding:5px;
+  background-color:var(--bg1);
 }
 
 h1#logo{
-  background-color:var(--bg1);
   grid-column:2;
+  padding:5px;
 }
 @media screen and (min-width: 721px){
   h1#logo{
