@@ -138,7 +138,7 @@ header > div.share div{
   height:50px;
   background-color:var(--amm1);
 }
-header > div.share div i.fab{
+header > div.share div i{
   font-size:30px;
 }
 
