@@ -103,6 +103,16 @@ body > header{
   padding:5px;
   background-color:var(--bg1);
 }
+@media screen and (min-width: 721px){
+  body > header{
+    height:120px;
+  }
+}
+@media screen and (max-width: 720px){
+  body > header{
+    max-height:200px;
+  }
+}
 
 h1#logo{
   grid-column:2;
@@ -111,7 +121,6 @@ h1#logo{
 @media screen and (min-width: 721px){
   h1#logo{
     width:calc(100% - 120px);
-    height:100px;
   }
 }
 @media screen and (max-width: 720px){
