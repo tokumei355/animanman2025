@@ -77,6 +77,14 @@ a:visited{
   color:var(--fc8);
 }
 
+input, select, textarea {
+  width:var(--sz3);
+}
+@media screen and (max-width: 720px)
+input, select, textarea {
+  width:var(--sz2);
+}
+
 /*★詳細設定*/
 body > header{
   grid-column: 1/-1;
