@@ -65,7 +65,7 @@ body {
               Meiryo,
               sans-serif;
   display:grid;
-  grid-template-columns: 1fr minmax(1200px,auto) 1fr;
+  grid-template-columns: 1fr minmax(75%,auto) 1fr;
 }
 
 a{
@@ -77,6 +77,8 @@ a:hover{
 a:visited{
   color:var(--fc8);
 }
+
+
 
 input, select, textarea{
   width:var(--sz3);
@@ -118,6 +120,7 @@ header > div.share div{
 
 main{
   grid-column:2;
+  max-width:1200px;
 }
 @media screen and (min-width: 721px){
   main{
