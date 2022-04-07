@@ -105,7 +105,7 @@ body > header{
 }
 @media screen and (min-width: 721px){
   body > header{
-    height:120px;
+    height:140px;
   }
 }
 @media screen and (max-width: 720px){
@@ -116,17 +116,18 @@ body > header{
 
 h1#logo{
   grid-column:2;
-  padding:5px;
 }
 @media screen and (min-width: 721px){
   h1#logo{
-    width:calc(100% - 120px);
+    width:calc(100% - 110px);
+    padding:5px 5px 5px 100px;
   }
 }
 @media screen and (max-width: 720px){
   h1#logo{
     width:calc(100% - 50px);
     height:100px;
+    padding:1%;
   }
 }
 
@@ -149,7 +150,7 @@ header > div.share{
 }
 @media screen and (min-width: 721px){
   header > div.share{
-    margin: auto 0 0 -120px;
+    margin: auto 0 0 -110px;
     gap:5px;
   }
 }
