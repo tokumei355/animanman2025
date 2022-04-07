@@ -125,6 +125,7 @@ h1#logo a.site_top svg#logo_img{
 @media screen and (min-width: 721px){
   header > div.share{
     margin: 0 0 0 -100px;
+    display:flex;
   }
 }
 @media screen and (max-width: 720px){
