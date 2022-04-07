@@ -65,7 +65,7 @@ body {
               Meiryo,
               sans-serif;
   display:grid;
-  grid-template-columns: 1fr minmax(75%,1fr) 1fr;
+  grid-template-columns: 1fr minmax(75%,auto) 1fr;
 }
 
 a{
