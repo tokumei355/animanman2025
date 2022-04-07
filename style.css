@@ -91,7 +91,7 @@ input, select, textarea{
 body > header{
   grid-column:1/-1;
   display:grid;
-  grid-template-columns: 1fr minmax(75%,1fr) 1fr;
+  grid-template-columns: 1fr minmax(75%,auto) 1fr;
 }
 
 h1#logo{
