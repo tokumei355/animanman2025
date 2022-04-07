@@ -4,6 +4,7 @@
   padding:0;
   text-decoration:none;
   font-weight: normal;
+  box-sizing: border-box;
 }
 
 /*★基本設定*/
