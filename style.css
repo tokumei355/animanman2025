@@ -70,7 +70,7 @@ body {
 }
 @media screen and (max-width: 720px){
   body {
-    
+    min-height:100vh;
   }
 }
 
@@ -104,22 +104,26 @@ body > header{
 
 h1#logo{
   background-color:var(--bg1);
-  color:var(--fc9);
   grid-column:2;
 }
 @media screen and (min-width: 721px){
   h1#logo{
     width:calc(100% - 120px);
+    height:100px;
   }
 }
 @media screen and (max-width: 720px){
   h1#logo{
     width:calc(100% - 50px);
+    height:100px;
   }
 }
 
-h1#logo a.site_top{
-    
+h1#logo a.site_top,
+h1#logo a.site_top:hover,
+h1#logo a.site_top:visited,
+header > div.share div i{
+    color:var(--fc9);
 }
 
 h1#logo a.site_top svg#logo_img{
@@ -153,7 +157,6 @@ header > div.share div{
 }
 header > div.share div i{
   font-size:30px;
-  color:var(--fc9);
 }
 
 main{
