@@ -33,7 +33,7 @@
   --fc5:#0f5132; /*お知らせの色*/
   --fc6:#dc3545; /*赤*/
   --fc7:#0a58ca; /*リンク(hover)*/
-  --fc8:#; /*リンク(visited)*/
+  --fc8:#7D74C7; /*リンク(visited)*/
   --fc9:#fff;
   --fc10:#000;
   --fcgr1:#5555ff;
@@ -129,13 +129,13 @@ header > div.share{
 @media screen and (min-width: 721px){
   header > div.share{
     margin: auto 0 0 -120px;
+    gap:5px;
   }
 }
 @media screen and (max-width: 720px){
   header > div.share{
     margin: auto 0 auto -50px;
     flex-direction: column;
-    gap:5px;
   }
 }
 header > div.share div{
