@@ -77,12 +77,13 @@ a:visited{
   color:var(--fc8);
 }
 
-input, select, textarea {
+input, select, textarea{
   width:var(--sz3);
 }
-@media screen and (max-width: 720px)
-input, select, textarea {
-  width:var(--sz2);
+@media screen and (max-width: 720px){
+  input, select, textarea {
+    width:var(--sz2);
+  }
 }
 
 /*★詳細設定*/
@@ -116,4 +117,14 @@ header > div.share div{
 
 main{
   grid-column: 2;
+}
+@media screen and (min-width: 721px){
+  main{
+  padding:10px;
+  }
+}
+@media screen and (max-width: 720px){
+  main{
+  padding:5%;
+  }
 }
