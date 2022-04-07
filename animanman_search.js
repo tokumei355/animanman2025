@@ -35,15 +35,23 @@ $(function() {
 	let snsUrl = encodeURIComponent(href);
 	let snsTitle = encodeURIComponent(getTitle);
 
-	$('div.btn').on("click",function(){
-		$(this).css({'background-color':'var(--amm3)'});
-		$(this).children('i').css({'color':'var(--amm2)'});
+	$('div.btn').each(function(){
 		let btn_a = $(this).attr('id');
 		let btn_b = btn_a;
 		switch (btn_b){
     			case 'tws_btn':
-    			$(this).attr('href','http://twitter.com/share?text='+ snsTitle + '&url='+ snsUrl);
+    			$(this).wrap($('<a>').attr({href:'http://twitter.com/share?text='+ snsTitle + '&url='+ snsUrl,target:'_blank'}));
     			break;
+
+			case 'cps_btn':
+			$(this).on("click",function(){
+				navigator.clipboard.writeText(getTitle + " " + href);
+			});
+			break;
   		}
+
+	}).on("click",function(){
+		$(this).css({'background-color':'var(--amm3)'});
+		$(this).children('i').css({'color':'var(--amm2)'});
 	});
 });
