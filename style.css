@@ -103,7 +103,7 @@ h1#logo{
 }
 @media screen and (min-width: 721px){
   h1#logo{
-    width:calc(100% - 100px);
+    width:calc(100% - 120px);
   }
 }
 @media screen and (max-width: 720px){
@@ -122,16 +122,20 @@ h1#logo a.site_top svg#logo_img{
   height:100px;
 }
 
+header > div.share{
+  display:flex;
+  flex-wrap: wrap;
+}
 @media screen and (min-width: 721px){
   header > div.share{
-    margin: auto 0 0 -100px;
-    display:flex;
-    gap:0 0;
+    margin: auto 0 0 -120px;
   }
 }
 @media screen and (max-width: 720px){
   header > div.share{
     margin: auto 0 auto -50px;
+    flex-direction: column;
+    gap:5px;
   }
 }
 header > div.share div{
