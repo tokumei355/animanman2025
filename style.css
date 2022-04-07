@@ -80,6 +80,8 @@ a:visited{
 /*★詳細設定*/
 body > header{
   grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 h1#logo{
@@ -96,6 +98,7 @@ h1#logo a.site_top svg#logo_img{
 header > div.share div{
   width:50px;
   height:50px;
+  background-color:var(--amm1);
 }
 
 main{
