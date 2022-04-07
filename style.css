@@ -35,6 +35,8 @@
   --fc8:#; /*リンク(visited)*/
   --fc9:#fff;
   --fc10:#000;
+  
+  --mg1:0 auto;
 }
 
 body {
@@ -60,6 +62,7 @@ a:visited{
 h1#logo{
   background-color:var(--bg1);
   color:var(--fc9);
+  margin:var(--mg1);
 }
 
 h1#logo a.site_top svg#logo_img{
