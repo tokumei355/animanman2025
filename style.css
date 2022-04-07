@@ -65,7 +65,7 @@ body {
               Meiryo,
               sans-serif;
   display:grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr minmax(75%,1fr) 1fr;
 }
 
 a{
@@ -89,15 +89,15 @@ input, select, textarea{
 
 /*★詳細設定*/
 body > header{
-  grid-column: 1/-1;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-column:1/-1;
+  display:grid;
+  grid-template-columns: 1fr minmax(75%,1fr) 1fr;
 }
 
 h1#logo{
   background-color:var(--bg1);
   color:var(--fc9);
-  grid-column: 1/-2;
+  grid-column:2;
 }
 
 h1#logo a.site_top{
@@ -117,7 +117,7 @@ header > div.share div{
 }
 
 main{
-  grid-column: 2;
+  grid-column:2;
 }
 @media screen and (min-width: 721px){
   main{
