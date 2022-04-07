@@ -50,6 +50,10 @@
   --amm8:#554D58; /*線*/
   
   --mg1:0 auto;
+  
+  --sz1:100%;
+  --sz2:95%;
+  --sz3:75%;
 }
 
 body {
@@ -59,6 +63,7 @@ body {
               "Hiragino Sans",
               Meiryo,
               sans-serif;
+  display:grid;
 }
 
 a{
@@ -72,10 +77,13 @@ a:visited{
 }
 
 /*★詳細設定*/
+body > header{
+  grid-column: 1/-1;
+}
+
 h1#logo{
   background-color:var(--bg1);
   color:var(--fc9);
-  margin:var(--mg1);
 }
 
 h1#logo a.site_top svg#logo_img{
