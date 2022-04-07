@@ -138,6 +138,9 @@ header > div.share div{
   height:50px;
   background-color:var(--amm1);
 }
+header > div.share div i.fab{
+  font-size:30px;
+}
 
 main{
   grid-column:2;
