@@ -124,13 +124,14 @@ h1#logo a.site_top svg#logo_img{
 
 @media screen and (min-width: 721px){
   header > div.share{
-    margin: 0 0 0 -100px;
+    margin: auto 0 0 -100px;
     display:flex;
+    gap:0 0;
   }
 }
 @media screen and (max-width: 720px){
   header > div.share{
-    margin: 0 0 0 -50px;
+    margin: auto 0 auto -50px;
   }
 }
 header > div.share div{
