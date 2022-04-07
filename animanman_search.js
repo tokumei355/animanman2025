@@ -30,6 +30,5 @@ const category29 = "";
 $('header > div.share div.btn').on({
   'click': function() {
     $(this).css({'color':'var(--amm2)','background-color':'var(--amm3)'});
-  },
-  
+  }
 });
