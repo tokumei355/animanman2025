@@ -92,6 +92,10 @@ h1#logo{
   grid-template-columns: repeat(2, 1fr);
 }
 
+h1#logo a.site_top{
+    grid-column: 2;
+}
+
 h1#logo a.site_top svg#logo_img{
   fill:var(--fc9);
   width:100px;
