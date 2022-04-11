@@ -112,6 +112,9 @@ body > header{
   body > header{
     max-height:200px;
   }
+  body > header > *{
+    max-height:200px;
+  }
 }
 
 h1#logo{
