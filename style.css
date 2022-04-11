@@ -125,12 +125,20 @@ h1#logo{
     width:calc(100% - 110px);
     padding:5px 5px 5px 100px;
   }
+  
+  h1#logo span.little{
+    font-size:10px;
+  }
 }
 @media screen and (max-width: 720px){
   h1#logo{
     width:calc(100% - 50px);
     height:100px;
     padding:1%;
+  }
+  
+  h1#logo span.little{
+    font-size:8px;
   }
 }
 
