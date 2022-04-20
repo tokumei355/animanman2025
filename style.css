@@ -198,3 +198,12 @@ main{
     padding:5%;
   }
 }
+
+main div.cyau_naiyou input{
+  width:15px;
+}
+
+main div#futan{
+  width:95%;
+  background-color:var(--bg3);
+}
