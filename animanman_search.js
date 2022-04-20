@@ -1,31 +1,6 @@
-const category1 = "その他漫画";
-const category2 = "アニメ";
-const category3 = "その他ゲーム・ソシャゲ";
-const category4 = "その他ジャンル(二次元以外)";
-const category6 = "作品別";
-const category7 = "その他話題";
-const category8 = "ウマ娘・競馬";
-const category9 = "型月(Fate・FGO・月姫など)";
-const category10 = "ポケモン";
-const category11 = "ジャンプ漫画(集英社系)";
-const category12 = "小説(ラノベ・web小説など)";
-const category13 = "アイドルマスター";
-const category14 = "鬼滅の刃";
-const category15 = "呪術廻戦";
-const category16 = "ワンピース";
-const category17 = "ワールドトリガー";
-const category18 = "進撃の巨人";
-const category19 = "ヒロアカ";
-const category20 = "安価系";
-const category21 = "実況";
-const category22 = "特撮ヒーロー";
-const category23 = "創作全般(絵・小説・ゲ制など)";
-const category24 = "VTuber・2.5次元";
-const category25 = "カードゲーム(TCG・DCG)";
-const category26 = "NARUTO・BORUTO";
-const category27 = "TOUGH(タフ)";
-const category28 = "チャンピオン漫画(秋田書店系)";
-const category29 = "";
+const google_url = 'https://www.google.com/search?q=';
+const s_abbs_url = 'site:bbs.animanch.com/board/';
+const enc_s_abbs_url = encodeURIComponent(s_abbs_url);
 
 $(function() {
 
@@ -54,4 +29,21 @@ $(function() {
 		$(this).css({'background-color':'var(--amm3)'});
 		$(this).children('i').css({'color':'var(--amm2)'});
 	});
+
+	$('main button').on("click",function(){
+		let s_query = $('input#q').val();
+		let enc_s_query = encodeURIComponent(s_query);
+		let category_select = $('select#s_category option:selected').val();
+		let category_select_txt = $('select#s_category option:selected').text();
+		
+		if (category_select.indexOf('category') > -1){
+			let enc_category = encodeURIComponent('"'+ category_select_txt +'"');
+			window.open(google_url + enc_s_abbs_url + "+" + enc_s_query + "+" + enc_category, '_blank');
+			alert("『" + s_query + "』 (カテゴリ『" + category_select_txt + "』) で検索しました");
+		}else{
+			window.open(google_url + enc_s_abbs_url + "+" + enc_s_query, '_blank');
+			alert("『" + s_query + "』で検索しました");
+		}
+	});
+
 });
